@@ -9,5 +9,12 @@ services:
       - 2181:2181
       - 9092:9092
     tty: true
-
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    ports:
+      - 9000:9000
+    environment:
+      KAFKA_BROKERCONNECT: kafka:19092
+    depends_on:
+      - kafka
 
