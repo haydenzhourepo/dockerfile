@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  hbase:
+    build:
+      context: .
+    ports:
+      - 16000:16000
+      - 16010:16010
+      - 9090:9090
+      - 9095:9095
+    stdin_open: true
+    tty: true
+
