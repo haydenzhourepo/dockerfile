@@ -5,6 +5,7 @@ services:
       context: .
     volumes:
       - ./data/:/data/kafka-logs
+    hostname: kafka
     ports:
       - 2181:2181
       - 9092:9092

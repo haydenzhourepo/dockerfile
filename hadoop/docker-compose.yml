@@ -3,7 +3,6 @@ services:
   hadoop:
     build: 
       context: .
-      network: host
     hostname: hadoop
     ports:
       - 8020:8020

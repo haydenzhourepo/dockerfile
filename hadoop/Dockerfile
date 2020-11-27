@@ -32,11 +32,15 @@ COPY conf/hdfs-site.xml /hadoop/etc/hadoop/
 COPY conf/yarn-site.xml /hadoop/etc/hadoop/
 COPY conf/mapred-site.xml /hadoop/etc/hadoop/
 
+ENV HADOOP_HOME=/hadoop
+
 ENV HDFS_NAMENODE_USER=root
 ENV HDFS_SECONDARYNAMENODE_USER=root
 ENV HDFS_DATANODE_USER=root
 ENV YARN_RESOURCEMANAGER_USER=root
 ENV YARN_NODEMANAGER_USER=root
+
+ENV HADOOP_ROOT_LOGGER=DEBUG,console
 
 EXPOSE 8020 8042 8088 9000 9868 9870 10020 19888 50010 50020 50090 22
 

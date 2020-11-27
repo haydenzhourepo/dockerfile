@@ -10,6 +10,10 @@
         <value>false</value>
     </property>
     <property>
+        <name>dfs.namenode.http-address</name>
+        <value>hadoop:50070</value>
+    </property>
+    <property>
         <name>dfs.client.use.datanode.hostname</name>
         <value>true</value>
     </property>
