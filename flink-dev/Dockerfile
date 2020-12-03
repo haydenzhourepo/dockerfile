@@ -23,7 +23,6 @@ RUN set -eux && \
 
 COPY entrypoint.sh /
 COPY config/server.properties /kafka/config/server.properties
-COPY config/zookeeper.properties /kafka/config/zookeeper.properties
 
 EXPOSE 9092 2181
 

@@ -71,6 +71,8 @@ docker-compose up -d
 ```
 then you can visit kafka cluster by localhost:9092 and visit cluster web ui by localhost:9000
 
+if you change your local network you should rm data dir then restart services
+
 
 
 

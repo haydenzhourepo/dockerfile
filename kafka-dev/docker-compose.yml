@@ -1,10 +1,11 @@
 version: '3'
 services:
   kafka:
-    build: 
+    build:
       context: .
     volumes:
-      - ./data/:/data/kafka-logs
+      - ./data/kafka-logs:/data/kafka-logs
+      - ./data/zookeeper:/data/zookeeper
     hostname: kafka
     ports:
       - 2181:2181
